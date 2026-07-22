@@ -289,9 +289,10 @@ h2{
 
     box-shadow:0 8px 18px rgba(0,0,0,.08);
 
-.numeroDia{
+}
+   .numeroDia{
 
-    font-size:22px;
+    font-size:30px;
 
     font-weight:bold;
 
@@ -301,14 +302,10 @@ h2{
 
 .coracoes{
 
-    display:flex;
+    align-self:center;
 
-    gap:6px;
+    font-size:22px;
 
-    flex-wrap:wrap;
-
-    font-size:20px;
-    
-   margin-top:auto;
+    min-height:26px;
 
 }
