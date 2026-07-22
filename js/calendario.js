@@ -74,7 +74,26 @@ function gerarCalendario() {
 
     const primeiroDia = new Date(anoAtual, mesAtual, 1).getDay();
 
-    console.log("Dias do mês:", totalDias);
-    console.log("Primeiro dia:", primeiroDia);
+    // Espaços antes do primeiro dia
+    for (let i = 0; i < primeiroDia; i++) {
+
+        const vazio = document.createElement("div");
+
+        calendario.appendChild(vazio);
+
+    }
+
+    // Dias do mês
+    for (let dia = 1; dia <= totalDias; dia++) {
+
+        const card = document.createElement("div");
+
+        card.className = "dia";
+
+        card.textContent = dia;
+
+        calendario.appendChild(card);
+
+    }
 
 }
