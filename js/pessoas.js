@@ -1,33 +1,37 @@
-const pessoas = {
-
-    Leticia:{
-        coracao:"💚",
-        inicial:"L",
-        cor:"#63C76A"
+const pessoas = [
+    {
+        id: "leticia",
+        nome: "Leticia",
+        coracao: "💚",
+        cor: "#63C76A",
+        inicial: "L"
     },
-
-    Natalia:{
-        coracao:"💙",
-        inicial:"N",
-        cor:"#5B8DEF"
+    {
+        id: "natalia",
+        nome: "Natalia",
+        coracao: "💙",
+        cor: "#4F8EF7",
+        inicial: "N"
     },
-
-    Geovana:{
-        coracao:"💜",
-        inicial:"G",
-        cor:"#A26BEA"
+    {
+        id: "geovana",
+        nome: "Geovana",
+        coracao: "💜",
+        cor: "#9B59F6",
+        inicial: "G"
     },
-
-    Thais:{
-        coracao:"🧡",
-        inicial:"T",
-        cor:"#FF9F43"
+    {
+        id: "thais",
+        nome: "Thais",
+        coracao: "🧡",
+        cor: "#FF914D",
+        inicial: "T"
     },
-
-    "Jéssica":{
-        coracao:"🩷",
-        inicial:"J",
-        cor:"#FF5FA2"
+    {
+        id: "jessica",
+        nome: "Jéssica",
+        coracao: "🩷",
+        cor: "#FF5BA7",
+        inicial: "J"
     }
-
-};
+];
