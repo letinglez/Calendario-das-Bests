@@ -8,15 +8,21 @@
 
 body{
 
-    background:#eef2f7;
+    font-family: Arial, Helvetica, sans-serif;
 
-    font-family:Arial, Helvetica, sans-serif;
+    background: linear-gradient(
+        180deg,
+        #F8F9FF,
+        #EEF2FA
+    );
 
     display:flex;
 
     justify-content:center;
 
-    padding:40px;
+    align-items:center;
+
+    min-height:100vh;
 
 }
 
