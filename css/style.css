@@ -288,3 +288,57 @@ h2{
     border-color:#4A6FA5;
 
 }
+
+.dia{
+
+    height:110px;
+
+    border:2px solid #E6E6E6;
+
+    border-radius:16px;
+
+    padding:10px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    background:white;
+
+}
+
+.dia:hover{
+
+    border-color:#4A6FA5;
+
+    transform:scale(1.03);
+
+}
+
+.numeroDia{
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    align-self:flex-start;
+
+}
+
+.coracoes{
+
+    display:flex;
+
+    gap:6px;
+
+    flex-wrap:wrap;
+
+    font-size:20px;
+
+}
