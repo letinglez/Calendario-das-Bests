@@ -1,14 +1,11 @@
-console.log("Calendário iniciado!");
-
+const listaAmigas = document.querySelector(".listaAmigas");
 const telaInicial = document.getElementById("telaInicial");
 const aplicacao = document.getElementById("aplicacao");
 const saudacao = document.getElementById("saudacao");
 
-const botoes = document.querySelectorAll(".amiga");
+function entrar(pessoa){
 
-function entrar(nome){
-
-    saudacao.textContent = `Olá, ${nome}!`;
+    saudacao.textContent = `Olá, ${pessoa.nome}! ${pessoa.coracao}`;
 
     telaInicial.classList.add("oculto");
 
@@ -16,12 +13,26 @@ function entrar(nome){
 
 }
 
-botoes.forEach(botao=>{
+function carregarAmigas(){
 
-    botao.addEventListener("click",()=>{
+    pessoas.forEach(pessoa=>{
 
-        entrar(botao.dataset.nome);
+        const botao=document.createElement("button");
+
+        botao.className="amiga";
+
+        botao.innerHTML=`${pessoa.coracao} ${pessoa.nome}`;
+
+        botao.addEventListener("click",()=>{
+
+            entrar(pessoa);
+
+        });
+
+        listaAmigas.appendChild(botao);
 
     });
 
-});
+}
+
+carregarAmigas();
