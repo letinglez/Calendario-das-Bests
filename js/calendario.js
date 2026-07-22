@@ -4,12 +4,10 @@ let mesAtual = hoje.getMonth();
 
 let anoAtual = hoje.getFullYear();
 
-gerarDias()
+function gerarDias() {
 
-trocarMes()
+}
 
-const hoje = new Date();
+function trocarMes() {
 
-let mesAtual = hoje.getMonth();
-
-let anoAtual = hoje.getFullYear();
+}
