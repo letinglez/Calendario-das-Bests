@@ -1,6 +1,7 @@
 function iniciarAplicacao() {
 
     carregarAmigas();
+    mostrarMes();
 
 }
 
