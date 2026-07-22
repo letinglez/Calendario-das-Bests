@@ -1,0 +1,7 @@
+function iniciarAplicacao() {
+
+    carregarAmigas();
+
+}
+
+iniciarAplicacao();
