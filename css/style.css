@@ -251,3 +251,40 @@ h2{
     display:none;
 
 }
+
+
+/* ==========================
+   CALENDÁRIO
+========================== */
+
+.dia{
+
+    height:90px;
+
+    border:2px solid #EAEAEA;
+
+    border-radius:15px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    background:white;
+
+    transition:.2s;
+
+}
+
+.dia:hover{
+
+    transform:scale(1.04);
+
+    border-color:#4A6FA5;
+
+}
