@@ -74,3 +74,65 @@ function gerarCalendario() {
     calendario.innerHTML = "";
 
 }
+
+
+const hoje = new Date();
+
+let mesAtual = hoje.getMonth();
+let anoAtual = hoje.getFullYear();
+
+const nomesMeses = [
+    "Janeiro",
+    "Fevereiro",
+    "Março",
+    "Abril",
+    "Maio",
+    "Junho",
+    "Julho",
+    "Agosto",
+    "Setembro",
+    "Outubro",
+    "Novembro",
+    "Dezembro"
+];
+
+function mostrarMes() {
+
+    const titulo = document.getElementById("mesAtual");
+
+    titulo.textContent = `${nomesMeses[mesAtual]} ${anoAtual}`;
+
+}
+
+function proximoMes() {
+    ...
+}
+
+function mesAnterior() {
+    ...
+}
+
+function gerarCalendario() {
+
+    const calendario = document.getElementById("calendario");
+
+    calendario.innerHTML = "";
+
+    const totalDias = new Date(anoAtual, mesAtual + 1, 0).getDate();
+
+    const primeiroDia = new Date(anoAtual, mesAtual, 1).getDay();
+
+    console.log("Dias do mês:", totalDias);
+    console.log("Primeiro dia:", primeiroDia);
+
+}
+
+function mostrarMes() {
+
+    const titulo = document.getElementById("mesAtual");
+
+    titulo.textContent = `${nomesMeses[mesAtual]} ${anoAtual}`;
+
+    gerarCalendario();
+
+}
