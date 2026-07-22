@@ -83,24 +83,26 @@ function gerarCalendario() {
 
     }
 
-// Dias do mês
-for (let dia = 1; dia <= totalDias; dia++) {
+    // Dias do mês
+    for (let dia = 1; dia <= totalDias; dia++) {
 
-    const card = document.createElement("div");
+        const card = document.createElement("div");
 
-    card.className = "dia";
+        card.className = "dia";
 
-    card.innerHTML = `
-        <div class="numeroDia">${dia}</div>
-        <div class="coracoes"></div>
-    `;
+        card.innerHTML = `
+            <div class="numeroDia">${dia}</div>
+            <div class="coracoes"></div>
+        `;
 
-    if (dia === 15) {
+        if (dia === 15) {
 
-        card.querySelector(".coracoes").textContent = "💚💜";
+            card.querySelector(".coracoes").textContent = "💚💜";
+
+        }
+
+        calendario.appendChild(card);
 
     }
-
-    calendario.appendChild(card);
 
 }
