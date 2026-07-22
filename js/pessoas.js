@@ -1,22 +1,33 @@
-const pessoas = [
-    {
-        nome: "Leticia",
-        emoji: "💚"
+const pessoas = {
+
+    Leticia:{
+        coracao:"💚",
+        inicial:"L",
+        cor:"#63C76A"
     },
-    {
-        nome: "Natalia",
-        emoji: "💙"
+
+    Natalia:{
+        coracao:"💙",
+        inicial:"N",
+        cor:"#5B8DEF"
     },
-    {
-        nome: "Geovana",
-        emoji: "💜"
+
+    Geovana:{
+        coracao:"💜",
+        inicial:"G",
+        cor:"#A26BEA"
     },
-    {
-        nome: "Thais",
-        emoji: "🧡"
+
+    Thais:{
+        coracao:"🧡",
+        inicial:"T",
+        cor:"#FF9F43"
     },
-    {
-        nome: "Jéssica",
-        emoji: "🩷"
+
+    "Jéssica":{
+        coracao:"🩷",
+        inicial:"J",
+        cor:"#FF5FA2"
     }
-];
+
+};
