@@ -29,3 +29,40 @@ function mostrarMes() {
     titulo.textContent = `${nomesMeses[mesAtual]} ${anoAtual}`;
 
 }
+
+function proximoMes() {
+
+    mesAtual++;
+
+    if (mesAtual > 11) {
+
+        mesAtual = 0;
+        anoAtual++;
+
+    }
+
+    mostrarMes();
+
+}
+
+function mesAnterior() {
+
+    mesAtual--;
+
+    if (mesAtual < 0) {
+
+        mesAtual = 11;
+        anoAtual--;
+
+    }
+
+    mostrarMes();
+
+}
+
+const btnAnterior = document.getElementById("btnAnterior");
+const btnProximo = document.getElementById("btnProximo");
+
+btnAnterior.addEventListener("click", mesAnterior);
+
+btnProximo.addEventListener("click", proximoMes);
