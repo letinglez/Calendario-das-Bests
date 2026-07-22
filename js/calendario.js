@@ -66,3 +66,11 @@ const btnProximo = document.getElementById("btnProximo");
 btnAnterior.addEventListener("click", mesAnterior);
 
 btnProximo.addEventListener("click", proximoMes);
+
+function gerarCalendario() {
+
+    const calendario = document.getElementById("calendario");
+
+    calendario.innerHTML = "";
+
+}
