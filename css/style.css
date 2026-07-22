@@ -1,156 +1,46 @@
-*{
+/* ==========================
+   RESET
+========================== */
 
+*{
     margin:0;
     padding:0;
     box-sizing:border-box;
-
 }
+
+/* ==========================
+   BODY
+========================== */
 
 body{
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
 
-    background: linear-gradient(
+    background:linear-gradient(
         180deg,
         #F8F9FF,
         #EEF2FA
     );
 
     display:flex;
-
     justify-content:center;
-
     align-items:center;
 
     min-height:100vh;
-
-}
-
-.container{
-
-    background:white;
-
-    width:1100px;
-
-    border-radius:20px;
 
     padding:40px;
 
-    box-shadow:0 10px 25px rgba(0,0,0,.10);
-
 }
 
-h1{
-
-    text-align:center;
-
-    color:#274C77;
-
-    margin-bottom:30px;
-
-}
-
-.mes{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    margin-bottom:30px;
-
-}
-
-.mes button{
-
-    border:none;
-
-    background:#274C77;
-
-    color:white;
-
-    width:45px;
-
-    height:45px;
-
-    border-radius:50%;
-
-    cursor:pointer;
-
-    font-size:18px;
-
-}
-
-.dias-semana{
-
-    display:grid;
-
-    grid-template-columns:repeat(7,1fr);
-
-    text-align:center;
-
-    margin-bottom:20px;
-
-    font-weight:bold;
-
-    color:#274C77;
-
-}
-
-#calendario{
-
-    display:grid;
-
-    grid-template-columns:repeat(7,1fr);
-
-    gap:15px;
-
-    min-height:350px;
-
-}
-
-.legenda{
-
-    margin-top:30px;
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:50px;
-
-}
-
-*{
-
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-
-}
-
-body{
-
-    font-family:Arial, Helvetica, sans-serif;
-
-    background:#F7F8FC;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    min-height:100vh;
-
-}
+/* ==========================
+   TELA INICIAL
+========================== */
 
 #telaInicial{
 
-    background:white;
-
     width:520px;
+
+    background:white;
 
     padding:40px;
 
@@ -180,11 +70,13 @@ p{
 
 h2{
 
-    margin-bottom:25px;
-
     color:#444;
 
 }
+
+/* ==========================
+   BOTÕES DAS AMIGAS
+========================== */
 
 .listaAmigas{
 
@@ -198,11 +90,9 @@ h2{
 
 .amiga{
 
-    border:none;
+    border:2px solid #E8E8E8;
 
     background:white;
-
-    border:2px solid #E8E8E8;
 
     padding:18px;
 
@@ -224,14 +114,13 @@ h2{
 
 }
 
-.oculto{
+/* ==========================
+   APLICAÇÃO
+========================== */
 
-    display:none;
-}
+#aplicacao{
 
-    #aplicacao{
-
-    width:1500px;
+    width:1100px;
 
     background:white;
 
@@ -243,11 +132,15 @@ h2{
 
 }
 
-    .cabecalho{
+/* ==========================
+   CABEÇALHO
+========================== */
+
+.cabecalho{
 
     text-align:center;
 
-    margin-bottom:30px;
+    margin-bottom:35px;
 
 }
 
@@ -259,7 +152,11 @@ h2{
 
 }
 
-    .navegacao{
+/* ==========================
+   NAVEGAÇÃO
+========================== */
+
+.navegacao{
 
     display:flex;
 
@@ -267,11 +164,11 @@ h2{
 
     align-items:center;
 
-    margin-bottom:35px;
+    margin-bottom:30px;
 
 }
 
-    .navegacao button{
+.navegacao button{
 
     width:45px;
 
@@ -291,15 +188,21 @@ h2{
 
 }
 
-    .diasSemana{
+/* ==========================
+   DIAS DA SEMANA
+========================== */
+
+.diasSemana{
 
     display:grid;
 
     grid-template-columns:repeat(7,1fr);
 
-    text-align:center;
+    gap:10px;
 
     margin-bottom:20px;
+
+    text-align:center;
 
     font-weight:bold;
 
@@ -307,7 +210,11 @@ h2{
 
 }
 
-    #calendario{
+/* ==========================
+   CALENDÁRIO
+========================== */
+
+#calendario{
 
     display:grid;
 
@@ -315,9 +222,15 @@ h2{
 
     gap:15px;
 
+    min-height:450px;
+
 }
 
-    .legenda{
+/* ==========================
+   LEGENDA
+========================== */
+
+.legenda{
 
     margin-top:40px;
 
@@ -328,5 +241,13 @@ h2{
     flex-wrap:wrap;
 
 }
+
+/* ==========================
+   UTILIDADES
+========================== */
+
+.oculto{
+
+    display:none;
 
 }
