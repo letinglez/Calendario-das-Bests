@@ -10,6 +10,8 @@ function entrar(pessoa) {
     telaInicial.classList.add("oculto");
     aplicacao.classList.remove("oculto");
 
+    mostrarMes();
+
 }
 
 function carregarAmigas() {
