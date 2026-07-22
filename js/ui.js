@@ -12,9 +12,14 @@ function entrar(pessoa) {
 
 function carregarAmigas() {
 
+    console.log("Carregando amigas...");
+    console.log(pessoas);
+
     listaAmigas.innerHTML = "";
 
     pessoas.forEach(pessoa => {
+
+}
 
         const botao = document.createElement("button");
 
