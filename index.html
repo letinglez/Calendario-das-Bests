@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Calendário das Bests</title>
+    <title>Calendário das Bests 💕</title>
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -14,56 +14,86 @@
 
 <body>
 
-    <main class="container">
+<header>
 
-        <h1>📅 Calendário das Bests</h1>
+    <h1>💕 Calendário das Bests</h1>
 
-        <section class="mes">
+    <p>Organizando um café de cada vez ☕</p>
 
-            <button id="anterior">
-                ◀
-            </button>
+</header>
 
-            <h2>Julho 2026</h2>
+<main class="container">
 
-            <button id="proximo">
-                ▶
-            </button>
+    <section class="usuario">
 
-        </section>
+        <label for="amiga">
+            Quem está usando?
+        </label>
 
-        <section class="dias-semana">
+        <select id="amiga">
 
-            <div>Dom</div>
-            <div>Seg</div>
-            <div>Ter</div>
-            <div>Qua</div>
-            <div>Qui</div>
-            <div>Sex</div>
-            <div>Sáb</div>
+            <option value="">Selecione...</option>
 
-        </section>
+            <option value="leticia">💚 Leticia</option>
 
-        <section id="calendario">
+            <option value="natalia">💙 Natalia</option>
 
-        </section>
+            <option value="geovana">💜 Geovana</option>
 
-        <section class="legenda">
+            <option value="thais">🧡 Thais</option>
 
-            <div>
-                🟢 Disponível
-            </div>
+            <option value="jessica">🩷 Jéssica</option>
 
-            <div>
-                🔴 Indisponível
-            </div>
+        </select>
 
-        </section>
+    </section>
 
-    </main>
+    <section class="cabecalho-calendario">
 
-    <script src="js/script.js"></script>
+        <button id="btnAnterior">◀</button>
+
+        <h2 id="mesAtual"></h2>
+
+        <button id="btnProximo">▶</button>
+
+    </section>
+
+    <section class="dias-semana">
+
+        <div>Dom</div>
+        <div>Seg</div>
+        <div>Ter</div>
+        <div>Qua</div>
+        <div>Qui</div>
+        <div>Sex</div>
+        <div>Sáb</div>
+
+    </section>
+
+    <section id="calendario">
+
+    </section>
+
+    <section class="legenda">
+
+        <div>💚 Leticia</div>
+
+        <div>💙 Natalia</div>
+
+        <div>💜 Geovana</div>
+
+        <div>🧡 Thais</div>
+
+        <div>🩷 Jéssica</div>
+
+    </section>
+
+</main>
+
+<script src="js/pessoas.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/calendario.js"></script>
+<script src="js/script.js"></script>
 
 </body>
-
 </html>
