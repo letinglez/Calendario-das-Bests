@@ -4,16 +4,15 @@ const aplicacao = document.getElementById("aplicacao");
 const saudacao = document.getElementById("saudacao");
 
 function entrar(pessoa) {
-
     saudacao.textContent = `Olá, ${pessoa.nome}! ${pessoa.coracao}`;
 
     telaInicial.classList.add("oculto");
-
     aplicacao.classList.remove("oculto");
-
 }
 
 function carregarAmigas() {
+
+    listaAmigas.innerHTML = "";
 
     pessoas.forEach(pessoa => {
 
@@ -24,9 +23,7 @@ function carregarAmigas() {
         botao.innerHTML = `${pessoa.coracao} ${pessoa.nome}`;
 
         botao.addEventListener("click", () => {
-
             entrar(pessoa);
-
         });
 
         listaAmigas.appendChild(botao);
