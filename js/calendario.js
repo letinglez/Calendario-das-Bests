@@ -20,7 +20,11 @@ const nomesMeses = [
 
 function mostrarMes() {
 
+    console.log("mostrarMes foi chamada");
+
     const titulo = document.getElementById("mesAtual");
+
+    console.log(titulo);
 
     titulo.textContent = `${nomesMeses[mesAtual]} ${anoAtual}`;
 
