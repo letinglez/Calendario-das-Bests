@@ -113,11 +113,24 @@ card.addEventListener("click", () => {
         agenda[chave] = [];
     }
 
-    if (!agenda[chave].includes(pessoaAtual.coracao)) {
-        agenda[chave].push(pessoaAtual.coracao);
-    }
+    const indice = agenda[chave].indexOf(pessoaAtual.coracao);
 
-    console.log(agenda);
+    if (indice === -1) {
+
+        // Ainda não marcou → adiciona
+        agenda[chave].push(pessoaAtual.coracao);
+
+    } else {
+
+        // Já marcou → remove
+        agenda[chave].splice(indice, 1);
+
+        // Se não sobrou ninguém, remove o dia da agenda
+        if (agenda[chave].length === 0) {
+            delete agenda[chave];
+        }
+
+    }
 
     gerarCalendario();
 
