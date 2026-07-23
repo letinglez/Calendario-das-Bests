@@ -5,7 +5,9 @@ const saudacao = document.getElementById("saudacao");
 
 let pessoaAtual = null;
 
-function entrar(pessoa) {
+function entrar(pessoa){
+
+    pessoaAtual = pessoa;
 
     saudacao.textContent = `Olá, ${pessoa.nome}! ${pessoa.coracao}`;
 
@@ -14,8 +16,6 @@ function entrar(pessoa) {
 
     mostrarMes();
 
-pessoaAtual = pessoa;
-    
 }
 
 function carregarAmigas() {
