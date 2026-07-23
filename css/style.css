@@ -376,3 +376,66 @@ h2{
     }
 
 }
+
+
+/* ==========================
+   CELULAR
+========================== */
+
+@media (max-width: 768px){
+
+    body{
+        padding:15px;
+    }
+
+    #telaInicial,
+    #aplicacao{
+        width:100%;
+        max-width:100%;
+        padding:20px;
+    }
+
+    #saudacao{
+        font-size:22px;
+    }
+
+    .navegacao button{
+        width:40px;
+        height:40px;
+        font-size:18px;
+    }
+
+    #calendario{
+
+        gap:8px;
+
+    }
+
+    .dia{
+
+        height:75px;
+        padding:6px;
+
+    }
+
+    .numeroDia{
+
+        font-size:18px;
+
+    }
+
+    .coracoes{
+
+        font-size:16px;
+
+    }
+
+    .legenda{
+
+        font-size:14px;
+        gap:10px;
+        justify-content:center;
+
+    }
+
+}
