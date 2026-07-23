@@ -96,11 +96,23 @@ card.innerHTML = `
     <div class="coracoes"></div>
 `;
 
+const chave = `${anoAtual}-${mesAtual}-${dia}`;
+
+if (agenda[chave]) {
+    card.querySelector(".coracoes").textContent = agenda[chave].join("");
+}
+
 card.addEventListener("click", () => {
 
-    const coracoes = card.querySelector(".coracoes");
+    const chave = `${anoAtual}-${mesAtual}-${dia}`;
 
-    coracoes.textContent += pessoaAtual.coracao;
+    if (!agenda[chave]) {
+        agenda[chave] = [];
+    }
+
+    agenda[chave].push(pessoaAtual.coracao);
+
+    gerarCalendario();
 
 });
 
