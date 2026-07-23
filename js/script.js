@@ -22,6 +22,12 @@ btnTrocarPessoa.addEventListener("click", voltarTelaInicial);
 function entrar(pessoa){
 
     pessoaAtual = pessoa;
+    
+let pessoaAtual = null;
+
+function entrar(pessoa){
+
+    pessoaAtual = pessoa;
 
     saudacao.textContent = `Olá, ${pessoa.nome}! ${pessoa.coracao}`;
 
