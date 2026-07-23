@@ -6,6 +6,8 @@ const saudacao = document.getElementById("saudacao");
 const btnTrocarPessoa = document.getElementById("btnTrocarPessoa");
 
 function voltarTelaInicial() {
+    
+    console.log("Arquivo carregado!");
 
     alert("Clique funcionou!");
 
