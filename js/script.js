@@ -1,4 +1,1 @@
-// Inicialização da aplicação
-
-carregarAmigas();
-mostrarMes();
+// Arquivo reservado para inicialização futura.
