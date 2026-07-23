@@ -7,6 +7,8 @@ const btnTrocarPessoa = document.getElementById("btnTrocarPessoa");
 
 function voltarTelaInicial() {
 
+    alert("Clique funcionou!");
+
     aplicacao.classList.add("oculto");
 
     telaInicial.classList.remove("oculto");
