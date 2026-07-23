@@ -28,6 +28,12 @@ function voltarTelaInicial() {
     aplicacao.classList.add("oculto");
     telaInicial.classList.remove("oculto");
 
+    mostrarMes();
+
+}
+
+if (btnTrocarPessoa) {
+    btnTrocarPessoa.addEventListener("click", voltarTelaInicial);
 }
 
 btnTrocarPessoa.addEventListener("click", voltarTelaInicial);
