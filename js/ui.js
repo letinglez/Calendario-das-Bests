@@ -3,6 +3,8 @@ const telaInicial = document.getElementById("telaInicial");
 const aplicacao = document.getElementById("aplicacao");
 const saudacao = document.getElementById("saudacao");
 
+let pessoaAtual = null;
+
 function entrar(pessoa) {
 
     saudacao.textContent = `Olá, ${pessoa.nome}! ${pessoa.coracao}`;
@@ -12,6 +14,8 @@ function entrar(pessoa) {
 
     mostrarMes();
 
+pessoaAtual = pessoa;
+    
 }
 
 function carregarAmigas() {
