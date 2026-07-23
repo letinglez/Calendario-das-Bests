@@ -3,6 +3,7 @@ const hoje = new Date();
 let mesAtual = hoje.getMonth();
 let anoAtual = hoje.getFullYear();
 let agenda = {};
+console.log("Agenda criada");
 
 const nomesMeses = [
     "Janeiro",
@@ -104,24 +105,24 @@ if (agenda[chave]) {
 
 card.addEventListener("click", () => {
 
+    if (!pessoaAtual) return;
+
     const chave = `${anoAtual}-${mesAtual}-${dia}`;
 
     if (!agenda[chave]) {
         agenda[chave] = [];
     }
 
-    agenda[chave].push(pessoaAtual.coracao);
+    if (!agenda[chave].includes(pessoaAtual.coracao)) {
+        agenda[chave].push(pessoaAtual.coracao);
+    }
+
+    console.log(agenda);
 
     gerarCalendario();
 
 });
-
-        if (dia === 15) {
-
-            card.querySelector(".coracoes").textContent = "💚💜";
-
-        }
-
+        
         calendario.appendChild(card);
 
     }
