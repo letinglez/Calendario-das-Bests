@@ -98,13 +98,9 @@ card.innerHTML = `
 
 card.addEventListener("click", () => {
 
-    console.log(
-        "Dia:",
-        dia,
-        "Pessoa:",
-        pessoaAtual.nome,
-        pessoaAtual.coracao
-    );
+    const coracoes = card.querySelector(".coracoes");
+
+    coracoes.textContent += pessoaAtual.coracao;
 
 });
 
