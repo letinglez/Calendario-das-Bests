@@ -86,14 +86,26 @@ function gerarCalendario() {
     // Dias do mês
     for (let dia = 1; dia <= totalDias; dia++) {
 
-        const card = document.createElement("div");
+       const card = document.createElement("div");
 
-        card.className = "dia";
+card.className = "dia";
 
-        card.innerHTML = `
-            <div class="numeroDia">${dia}</div>
-            <div class="coracoes"></div>
-        `;
+card.innerHTML = `
+    <div class="numeroDia">${dia}</div>
+    <div class="coracoes"></div>
+`;
+
+card.addEventListener("click", () => {
+
+    console.log(
+        "Dia:",
+        dia,
+        "Pessoa:",
+        pessoaAtual.nome,
+        pessoaAtual.coracao
+    );
+
+});
 
         if (dia === 15) {
 
@@ -106,3 +118,5 @@ function gerarCalendario() {
     }
 
 }
+
+
