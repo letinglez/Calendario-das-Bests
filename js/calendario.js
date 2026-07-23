@@ -2,6 +2,7 @@ const hoje = new Date();
 
 let mesAtual = hoje.getMonth();
 let anoAtual = hoje.getFullYear();
+let agenda = {};
 
 const nomesMeses = [
     "Janeiro",
