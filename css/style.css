@@ -37,8 +37,8 @@ body{
 ========================== */
 
 #telaInicial{
-
-    width:520px;
+    width:100%;
+    max-width:520px;
 
     background:white;
 
@@ -119,8 +119,10 @@ h2{
 ========================== */
 
 #aplicacao{
-
-    width:1100px;
+   
+    width:100%;
+   
+    max-width:1100px;
 
     background:white;
 
@@ -346,3 +348,31 @@ h2{
 }
 
 
+@media (max-width: 768px){
+
+    body{
+        padding:15px;
+    }
+
+    #aplicacao{
+        padding:20px;
+    }
+
+    .dia{
+        height:80px;
+        padding:8px;
+    }
+
+    .numeroDia{
+        font-size:20px;
+    }
+
+    #saudacao{
+        font-size:22px;
+    }
+
+    .navegacao h2{
+        font-size:20px;
+    }
+
+}
