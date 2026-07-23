@@ -115,25 +115,23 @@ card.addEventListener("click", () => {
 
     const indice = agenda[chave].indexOf(pessoaAtual.coracao);
 
-    if (indice === -1) {
+if (indice === -1) {
 
-        // Ainda não marcou → adiciona
-        agenda[chave].push(pessoaAtual.coracao);
+    agenda[chave].push(pessoaAtual.coracao);
 
-    } else {
+} else {
 
-        // Já marcou → remove
-        agenda[chave].splice(indice, 1);
+    agenda[chave].splice(indice, 1);
 
-        // Se não sobrou ninguém, remove o dia da agenda
-        if (agenda[chave].length === 0) {
-            delete agenda[chave];
-        }
-
+    if (agenda[chave].length === 0) {
+        delete agenda[chave];
     }
 
-    gerarCalendario();
+}
 
+salvarAgenda();
+
+gerarCalendario();
 });
         
         calendario.appendChild(card);
