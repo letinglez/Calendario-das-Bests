@@ -3,6 +3,22 @@ const telaInicial = document.getElementById("telaInicial");
 const aplicacao = document.getElementById("aplicacao");
 const saudacao = document.getElementById("saudacao");
 
+const btnTrocarPessoa = document.getElementById("btnTrocarPessoa");
+
+function voltarTelaInicial() {
+
+    aplicacao.classList.add("oculto");
+
+    telaInicial.classList.remove("oculto");
+
+    saudacao.textContent = "";
+
+    pessoaAtual = null;
+
+}
+
+btnTrocarPessoa.addEventListener("click", voltarTelaInicial);
+
 function entrar(pessoa){
 
     saudacao.textContent = `Olá, ${pessoa.nome}! ${pessoa.coracao}`;
