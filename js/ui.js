@@ -2,10 +2,11 @@ const listaAmigas = document.querySelector(".listaAmigas");
 const telaInicial = document.getElementById("telaInicial");
 const aplicacao = document.getElementById("aplicacao");
 const saudacao = document.getElementById("saudacao");
+const btnTrocarPessoa = document.getElementById("btnTrocarPessoa");
 
 let pessoaAtual = null;
 
-function entrar(pessoa){
+function entrar(pessoa) {
 
     pessoaAtual = pessoa;
 
@@ -18,10 +19,20 @@ function entrar(pessoa){
 
 }
 
-function carregarAmigas() {
+function voltarTelaInicial() {
 
-    console.log("Carregando amigas...");
-    console.log(pessoas);
+    pessoaAtual = null;
+
+    saudacao.textContent = "";
+
+    aplicacao.classList.add("oculto");
+    telaInicial.classList.remove("oculto");
+
+}
+
+btnTrocarPessoa.addEventListener("click", voltarTelaInicial);
+
+function carregarAmigas() {
 
     listaAmigas.innerHTML = "";
 
@@ -31,13 +42,9 @@ function carregarAmigas() {
 
         botao.className = "amiga";
 
-        botao.innerHTML = `${pessoa.coracao} ${pessoa.nome}`;
+        botao.textContent = `${pessoa.coracao} ${pessoa.nome}`;
 
-        botao.addEventListener("click", () => {
-
-            entrar(pessoa);
-
-        });
+        botao.addEventListener("click", () => entrar(pessoa));
 
         listaAmigas.appendChild(botao);
 
