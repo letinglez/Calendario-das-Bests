@@ -302,8 +302,21 @@ h2{
 
 .coracoes{
 
-    align-self:center;
+    display:flex;
 
+    justify-content:center;
+
+    gap:4px;
+
+    flex-wrap:wrap;
+
+    margin-top:8px;
+
+}
+
+/* ==========================
+   BOTÃO TROCAR AMIGA
+========================== */
    .botaoSecundario{
 
     background:#4A6FA5;
@@ -320,10 +333,6 @@ h2{
     margin-bottom:20px;
 
 }
-
-/* ==========================
-   BOTÃO TROCAR AMIGA
-========================== */
 
 .botaoSecundario:hover{
 
