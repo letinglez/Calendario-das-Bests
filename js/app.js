@@ -4,15 +4,15 @@ function iniciarAplicacao() {
 
     function iniciarAplicacao() {
 
-    carregarAgenda();
+        carregarAgenda();
 
-    carregarAmigas();
+        carregarAmigas();
 
-    mostrarMes();
+        mostrarMes();
 
-}
+    }
 
-iniciarAplicacao();
+    iniciarAplicacao();
     mostrarMes();
 
 }
