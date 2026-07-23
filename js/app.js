@@ -1,18 +1,9 @@
 function iniciarAplicacao() {
 
+    carregarAgenda();
+
     carregarAmigas();
 
-    function iniciarAplicacao() {
-
-        carregarAgenda();
-
-        carregarAmigas();
-
-        mostrarMes();
-
-    }
-
-    iniciarAplicacao();
     mostrarMes();
 
 }
