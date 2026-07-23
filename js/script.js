@@ -21,11 +21,15 @@ btnTrocarPessoa.addEventListener("click", voltarTelaInicial);
 
 function entrar(pessoa){
 
+    pessoaAtual = pessoa;
+
     saudacao.textContent = `Olá, ${pessoa.nome}! ${pessoa.coracao}`;
 
     telaInicial.classList.add("oculto");
 
     aplicacao.classList.remove("oculto");
+
+    mostrarMes();
 
 }
 
