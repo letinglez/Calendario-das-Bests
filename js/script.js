@@ -61,4 +61,8 @@ function carregarAmigas(){
 
 }
 
+    if (!agenda[chave].includes(pessoaAtual.coracao)) {
+    agenda[chave].push(pessoaAtual.coracao);
+}
+
 carregarAmigas();
