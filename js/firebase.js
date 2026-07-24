@@ -1,8 +1,3 @@
-agenda = {
-  "2026-7-23": ["💚", "💜"],
-  "2026-7-24": ["🩷"],
-  "2026-8-01": ["💙", "❤️", "💚"]
-}
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-app.js";
 
 import {
