@@ -9,3 +9,4 @@ function carregarAgenda() {
         agenda = JSON.parse(dados);
     }
 }
+console.log(window.database);
